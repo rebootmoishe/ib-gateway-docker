@@ -1,4 +1,5 @@
 #!/bin/bash
-cd /root/Jts/ibgateway/963
+IBVERSION=${IBVERSION:-978}
+cd /root/Jts/ibgateway/${IBVERSION}
 xvfb-daemon-run \
   ./ibgateway
